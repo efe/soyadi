@@ -22,7 +22,7 @@ if (last_name != null & last_name != ""){
 		document.getElementById("notakparty").hidden = true;
 		var text = "Sayın " + last_name + ", sende tam AKP'li soyadı var. :)       "
 		document.getElementById("akp-message").textContent = text;
-		var twitter_embed = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="soyadıma göre ak partiliymişim. :)" data-url="https://efe.github.io/soyadi/" data-via="mevlutuysal_bsk, @efeoge" data-related="mevlutuysal_bsk,efeoge"  data-show-count="false">Tweet</a>'
+		var twitter_embed = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="soyadıma göre ak partiliymişim. :)" data-url="https://efe.github.io/soyadi/" data-via="mevlutuysal_bsk" data-related="mevlutuysal_bsk,efeoge"  data-show-count="false">Tweet</a>'
 		document.getElementById("akp-message").innerHTML = document.getElementById("akp-message").innerHTML + twitter_embed;
 	}	
 	else {
@@ -30,7 +30,7 @@ if (last_name != null & last_name != ""){
 		document.getElementById("notakparty").hidden = false;
 		var text = "Sayın "+ last_name + ", senden AKP'li olmaz. :(       "
 		document.getElementById("nonakp-message").textContent = text;
-		var twitter_embed = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="soyadıma göre ak partili değilmişim. :)" data-url="https://efe.github.io/soyadi/" data-via="mevlutuysal_bsk, @efeoge" data-related="mevlutuysal_bsk,efeoge"  data-show-count="false">Tweet</a>'
+		var twitter_embed = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="soyadıma göre ak partili değilmişim. :)" data-url="https://efe.github.io/soyadi/" data-via="mevlutuysal_bsk" data-related="mevlutuysal_bsk,efeoge"  data-show-count="false">Tweet</a>'
 		document.getElementById("nonakp-message").innerHTML = document.getElementById("nonakp-message").innerHTML + twitter_embed;
 	}
 }
