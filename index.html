@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Soyadından Parti Bulucu</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  </head>
+  <body>
+    <h1><a href="https://efe.github.io/soyadi">Soyadından Parti Bulucu</a></h1>
+    <p>"Burada 3 bin 92 seçmenden de baktığımız zaman diğer kaydı düşürülen <strong>seçmenlerde soyadı ismi tarandığında AK Parti’ye oy verdiği kolayca tespit edilen kişiler olduğunu görüyoruz.</strong> AK Parti’ye oy verenlerin seçmen listesinden düşürülmesi şeklinde yapılmış." <br>- Mevlüt Uysal (10 Nisan 2019)</p> 
+    <form method="GET">
+  	<input type="text" placeholder="soyadı" id="lastname" name="lastname">
+  	<input type="submit" value="partini bul">
+	</form>
+	<div class="party">
+		<div id="akparty" hidden>
+		<img style="width: 500px" src="assets/happy.jpg">
+		<h3 id="akp-message"></h3>
+		</div>
+		<div id="notakparty" hidden>
+		<img style="width: 500px" src="assets/sad.jpg">
+		<h3 id="nonakp-message"></h3>
+		</div>
+	</div>
+	<div class=footer><a href="https://github.com/efe/soyadi"><img src="assets/github.ico" style="height: 24px; width: 24px;"></a></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

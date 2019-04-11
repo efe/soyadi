@@ -1,0 +1,36 @@
+html {
+	font-family: 'Playfair Display', serif;
+	width: 600px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+form {
+	margin-top: 30px;
+}
+
+strong {
+	font-size: 20px;
+}
+
+input {
+	padding-left: 10px;
+	line-height: 3em;
+	border-radius: 10px;
+}
+
+div.party {
+	margin-top: 50px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #666462;
+}
+
+a:active {
+  color: black;
+}
