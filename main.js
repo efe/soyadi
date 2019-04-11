@@ -14,12 +14,14 @@ const output = net.run(last_name);
 console.log(last_name + " - " + output);
 
 if (last_name != null & last_name != ""){
-	if (output == "AK Parti"){
+	if (last_name.toLowerCase() == "atatürk") {
+		window.location.replace("https://www.youtube.com/watch?v=wQPtkbAiRrU");
+	}
+	else if (output == "AK Parti"){
 		document.getElementById("akparty").hidden = false;
 		document.getElementById("notakparty").hidden = true;
 		var text = "Sayın " + last_name + ", sende tam AKP'li soyadı var. :)"
 		document.getElementById("akp-message").textContent = text;
-
 	}	
 	else {
 		document.getElementById("akparty").hidden = true;
