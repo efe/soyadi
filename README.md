@@ -9,4 +9,4 @@ Here is the [demo](https://efe.github.io/soyadi).
 - Deep Neural Network. ✅
 - Natural Language Processing. ✅
 - Big Data. ✅
-- Scaleability. ✅
+- Scalability. ✅
