@@ -2,10 +2,10 @@ var brain = require('brain.js')
 var net = new brain.recurrent.LSTM();
 
 var fs = require('fs');
-var contents = fs.readFileSync('parliments.json', 'utf8');
-var parliments = JSON.parse(contents)
+var contents = fs.readFileSync('parliamentarians.json', 'utf8');
+var parliamentarians = JSON.parse(contents)
 
-net.train(parliments)
+net.train(parliamentarians)
 
 const classifier_output = net.toJSON();
 

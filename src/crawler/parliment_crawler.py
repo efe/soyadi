@@ -10,7 +10,7 @@ soup = BeautifulSoup(response.text, 'html.parser')
 all_tr_elements = soup.find_all("tr")
 
 parties = ['AK Parti', 'CHP', 'MHP', 'İYİ Parti', 'HDP', 'DP', 'BBP', 'BAĞIMSIZ', 'TİP', 'Saadet P']
-parliments = []
+parliamentarians = []
 
 for tr_element in all_tr_elements:
 	full_name = tr_element.contents[1].text
@@ -21,7 +21,7 @@ for tr_element in all_tr_elements:
 			"last_name": full_name.split()[-1],
 			"party": party
 		}
-		parliments.append(obj)
+		parliamentarians.append(obj)
 
-with open('parliments.json', 'w') as f:
-	json.dump(parliments, f)
+with open('parliamentarians.json', 'w') as f:
+	json.dump(parliamentarians, f)
