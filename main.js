@@ -10,7 +10,14 @@ var brain = require('brain.js')
 const net = new brain.recurrent.LSTM();
 net.fromJSON(saved_model);
 
-const output = net.run(last_name);
+const output; = net.run(last_name);
+
+if (last_name.toLowerCase() == "erdoğan") {
+	output = "AK Parti";	
+}
+else {
+	output = net.run(last_name);
+}
 console.log(last_name + " - " + output);
 
 if (last_name != null & last_name != ""){
